@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordvik Fastigheter - Felanmälan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Nordvik Fastigheter AB</h1>
+    <h2>Felanmälan</h2>
+
+    <form>
+
+        <label for="title">Titel</label>
+        <input type="text" id="title" required>
+
+        <label for="category">Kategori</label>
+        <select id="category">
+            <option>Värme</option>
+            <option>Vatten</option>
+            <option>Lås</option>
+            <option>El</option>
+            <option>Övrigt</option>
+        </select>
+
+        <label for="description">Beskrivning</label>
+        <textarea id="description" rows="5" required></textarea>
+
+        <label for="image">Bild</label>
+        <input type="file" id="image" accept="image/*">
+
+        <button type="submit">Skicka felanmälan</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
